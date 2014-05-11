@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:layout_marginTop="100dp"
+	    android:layout_gravity="center">
+		<TextView 
+		    android:id="@+id/welcome"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/string_mabuhay"
+		    android:fontFamily="sans-serif-light"
+		    android:textSize="40sp"
+		    android:paddingTop="8dp"
+		    android:layout_marginBottom="24dp"
+		    android:textColor="@color/blueViaje"
+		    android:gravity="center"/>
+
+		<TextView 
+		    android:id="@+id/thanks"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/welcome"
+		    android:text="@string/string_thankyou"
+		    android:gravity="center"
+		    android:fontFamily="sans-serif-light"
+		    android:textSize="14sp"
+		    android:padding="8dp"/>
+		
+		<TextView 
+		    android:id="@+id/instructions"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/thanks"
+		    android:text="@string/string_instruction"
+		    android:gravity="center"
+		    android:paddingTop="4dp"
+		    android:fontFamily="sans-serif-light"
+		    android:textColor="@color/blueViaje"
+		    android:textSize="12sp"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+	    android:id="@+id/buttons"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:baselineAligned="false"
+	    android:weightSum="2" >
+
+	    <RelativeLayout
+   	        android:layout_weight="1"
+   	        android:layout_width="0dp"
+	        android:layout_height="wrap_content">
+       	    <Button
+		        android:id="@+id/skip"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/background_blue_button_selector"
+		        android:layout_alignParentBottom="true"
+            	android:layout_alignParentLeft="true"
+		        android:clickable="true"
+		        android:fontFamily="sans-serif-light"
+		        android:gravity="center|center_vertical"
+		        android:text="SKIP"
+		        android:onClick="ButtonCalls"
+		        android:textColor="@color/ViajeWhite"
+		        android:textSize="18sp" />
+	    </RelativeLayout>
+
+
+	    <RelativeLayout
+   	        android:layout_weight="1"
+   	        android:layout_width="0dp"
+	        android:layout_height="wrap_content">
+       	    <Button
+		        android:id="@+id/next"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/background_blue_button_selector"
+  		        android:layout_alignParentBottom="true"
+            	android:layout_alignParentRight="true"
+		        android:clickable="true"
+		        android:fontFamily="sans-serif-light"
+		        android:gravity="center|center_vertical"
+		        android:text="NEXT"
+		        android:onClick="ButtonCalls"
+		        android:textColor="@color/ViajeWhite"
+		        android:textSize="18sp" />
+	    </RelativeLayout>
+	
+	</LinearLayout>
+</LinearLayout>

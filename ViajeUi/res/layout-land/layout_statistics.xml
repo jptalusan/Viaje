@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DisplayStatisticsActivity" >
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:scrollbars="vertical"
+	    android:scrollbarStyle="outsideOverlay"
+	    android:scrollbarDefaultDelayBeforeFade="1000" >
+	    <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:text="Top 5 Favorite Routes in the last 10 days"
+		        android:textStyle="bold" />
+		
+		    <TextView
+		        android:id="@+id/top1Route"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/textView1"
+		        android:layout_below="@+id/textView1" />
+		
+		    <TextView
+		        android:id="@+id/top2Route"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignRight="@+id/top1Route"
+		        android:layout_below="@+id/top1Route" />
+		
+		    <TextView
+		        android:id="@+id/top3Route"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top2Route"
+		        android:layout_below="@+id/top2Route" />
+		
+		    <TextView
+		        android:id="@+id/top4Route"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top3Route"
+		        android:layout_below="@+id/top3Route" />
+		
+		    <TextView
+		        android:id="@+id/top5Route"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top4Route"
+		        android:layout_below="@+id/top4Route" />
+		
+		    <TextView
+		        android:id="@+id/textView7"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top5Route"
+		        android:layout_below="@+id/top5Route"
+		        android:layout_marginTop="16dp"
+		        android:text="Top 5 Routes Searched in the last 10 days"
+		        android:textStyle="bold" />
+		
+		    <TextView
+		        android:id="@+id/top1Search"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top5Route"
+		        android:layout_below="@+id/textView7" />
+		
+		    <TextView
+		        android:id="@+id/top2Search"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top5Route"
+		        android:layout_below="@+id/top1Search" />
+		
+		    <TextView
+		        android:id="@+id/top3Search"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top5Route"
+		        android:layout_below="@+id/top2Search" />
+		
+		    <TextView
+		        android:id="@+id/top4Search"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top5Route"
+		        android:layout_below="@+id/top3Search" />
+		
+		    <TextView
+		        android:id="@+id/top5Search"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top5Route"
+		        android:layout_below="@+id/top4Search" />
+		
+		    <TextView
+		        android:id="@+id/totalDistancLbl"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top5Search"
+		        android:layout_below="@+id/top5Search"
+		        android:layout_marginTop="18dp"
+		        android:text="Total Distance Traveled: "
+		        android:textStyle="bold" />
+		
+		    <TextView
+		        android:id="@+id/totalDistance"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/top5Search"
+		        android:layout_below="@+id/totalDistancLbl" />
+		
+		    <TextView
+		        android:id="@+id/taxiTotalCost"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/totalDistance"
+		        android:layout_below="@+id/taxiTotalCostLbl" />
+		
+		    <TextView
+		        android:id="@+id/carTotalCost"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/taxiTotalCost"
+		        android:layout_below="@+id/carTotalCostLbl" />
+
+		    <TextView
+		        android:id="@+id/taxiTotalCostLbl"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/totalDistance"
+		        android:text="Money saved compared to taking a Taxi"
+		        android:textStyle="bold" />
+
+		    <TextView
+		        android:id="@+id/carTotalCostLbl"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/taxiTotalCost"
+		        android:text="Money saved compared to using a private car"
+		        android:textStyle="bold" />
+
+	    </RelativeLayout>
+	</ScrollView>
+</RelativeLayout>

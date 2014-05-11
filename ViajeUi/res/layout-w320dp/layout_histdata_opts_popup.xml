@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/histdata_opts_popup"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/background_hist_data_opts_popup"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/ViajeGray"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/hist_data_titlebar_text"
+        android:textColor="@color/ViajeWhite"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/histDataPopupText"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:text="@string/hist_data_blurb" />
+
+    <Spinner
+        android:id="@+id/daySpinner"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:alpha="1"
+        android:layout_gravity="center"
+        android:background="@color/ViajeWhite"
+        android:prompt="@string/day_of_wk_prompt"
+        android:spinnerMode="dialog"
+        android:textColor="@color/ViajeBlack" />
+
+    <Spinner
+        android:id="@+id/timeSpinner"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:prompt="@string/time_of_day_prompt"
+        android:textColor="@color/ViajeGray"
+        android:background="@color/ViajeWhite"
+        android:spinnerMode="dialog" />
+
+    <Spinner
+        android:id="@+id/weatherSpinner"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:prompt="@string/weather_prompt"
+        android:textColor="@color/ViajeGray"
+        android:background="@color/ViajeWhite"
+        android:spinnerMode="dialog" />
+
+    <LinearLayout
+	    android:id="@+id/histdata_opts_btn_panel"
+        android:layout_width="280dp"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/histdata_ok"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/def_choice_ok" />
+
+        <Button
+            android:id="@+id/histdata_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:text="@string/def_choice_cancel" />
+        
+    </LinearLayout>
+
+</LinearLayout>

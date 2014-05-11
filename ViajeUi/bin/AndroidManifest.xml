@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.viaje.main"
+    android:versionCode="3"
+    android:versionName="1.0.3" >
+    
+	<!-- permission
+	        android:name="com.example.project.package.permission.MAPS_RECEIVE"
+	        android:protectionLevel="signature"/>
+	
+	<uses-permission android:name="com.example.project.package.permission.MAPS_RECEIVE"/-->
+	
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+         The following two permissions are not required to use
+	     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.viaje.main.UiMainActivity"
+            android:label="@string/app_name" >
+            <!--intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->
+        </activity>
+        <activity
+            android:name="com.viaje.main.FindRouteFragment"
+            android:label="@string/title_activity_find_route" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.SavedRouteListActivity"
+            android:label="@string/title_activity_saved_route" >
+        </activity>
+        <activity
+            android:name="com.abeanie.SavedRoutesList"
+            android:label="@string/title_activity_saved_route" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.ReportIncidentActivity"
+            android:label="@string/title_activity_report_incident" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.DisplayStatistics"
+            android:label="@string/title_activity_display_statistics" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.DisplayAbout"
+            android:label="@string/title_activity_display_about" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.Tutorial"
+            android:label="@string/title_activity_display_help"
+            android:theme="@style/NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.ClearEditTextLine"
+            android:label="@string/title_activity_clear_edit_text_line" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.DisplayFindRouteResult"
+            android:label="@string/title_activity_display_find_route_result"
+            android:parentActivityName="com.viaje.main.UiMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.viajeui.UiMainActivity" />
+        </activity>
+        <activity
+            android:name="com.viaje.main.TypefaceSpan"
+            android:label="@string/title_activity_typeface_span" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.RotateSwitchIcon"
+            android:label="@string/title_activity_rotate_switch_icon" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyD9ZAqKJrtPZYgzTSQTmldg8_S1CgkJYuM" />
+
+        <activity
+            android:name="com.viaje.main.FindRouteResultActivity"
+            android:label="@string/title_activity_find_route_result"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeForRoute" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.FindRouteResultList"
+            android:label="@string/title_activity_find_route_result_list"
+            android:parentActivityName="com.viaje.main.UiMainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.viajeui.UiMainActivity" />
+        </activity>
+        <activity
+            android:name="com.viaje.main.FindRouteResultMap"
+            android:label="@string/title_activity_find_route_result_map" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.ShowReportIncidentPopUp"
+            android:label="@string/title_activity_show_report_incident_pop_up" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:theme="@style/NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.viaje.main.RegisterUser"
+            android:label="@string/title_activity_register_user"
+            android:theme="@style/NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.viaje.main.SampleLogIn"
+            android:label="@string/title_activity_sample_log_in" >
+        </activity>
+    </application>
+
+</manifest>

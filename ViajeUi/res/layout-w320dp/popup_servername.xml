@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_report_incident"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="6dp"
+    android:paddingRight="6dp"
+    android:paddingLeft="6dp"
+    tools:context=".ShowReportIncidentPopUp" >
+
+<TextView
+    android:id="@+id/serverNameLabel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="8dp"
+    android:background="@null"
+    android:gravity="center"
+    android:text="Please Enter Server IP/Hostname of OTP Server"
+    android:textSize="22sp" />
+
+<EditText
+    android:id="@+id/serverName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/serverNameLabel"
+    android:layout_centerHorizontal="true"
+    android:ems="10"
+    android:hint="192.168.0.123"
+    android:singleLine="true" />
+
+<Button
+    android:id="@+id/okButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/serverName"
+    android:onClick="ButtonCalls"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="14dp"
+    android:text="OK" />
+
+</RelativeLayout>

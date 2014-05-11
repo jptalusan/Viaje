@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="left"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/openNavDrawer"
+        android:contentDescription="@string/openNavDrawerDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_navigation_drawer"
+        android:background="@drawable/navdrawer_button"
+        android:onClick="buttonCalls"
+        android:clickable="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/viaje"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+    
+    <ImageButton
+        android:id="@+id/buttonReportIncident"
+        android:contentDescription="@string/openNavDrawerDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="8dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_navmenu_report_incident"
+        android:background="@drawable/navdrawer_button"
+        android:clickable="true"
+        android:onClick="buttonCalls"
+        android:text="" />
+
+</RelativeLayout>

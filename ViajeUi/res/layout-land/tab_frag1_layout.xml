@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:background="@color/ViajeLightGray">
+			
+            <!-- TextView android:id="@+id/trip_desc_text" 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This text field describes this route"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"/ -->
+                
+            <RelativeLayout 
+                android:id="@+id/summary_panel"
+                android:background="@drawable/background_tab_summary"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:paddingBottom="8dp">
+	
+			    <LinearLayout android:id="@+id/summary_panel_left"
+	                        android:orientation="vertical"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_alignParentLeft="true"
+			                android:layout_marginTop="4dp"
+	                        android:layout_marginBottom="4dp"
+	                        android:paddingLeft="12dp"
+	                        android:background="@null">
+			                
+							<TextView android:id="@+id/traff_cond_label" 
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            android:text="@string/traff_cond_label_str"
+	                                android:layout_marginRight="4dp"
+	                                android:textColor="@color/ViajeGray"
+	                                android:fontFamily="sans_serif_light"/>
+	                        
+	                        <TextView android:id="@+id/total_dist_label" 
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:text="@string/total_dist_label_str"
+	                                android:layout_marginRight="4dp"
+	                                android:textColor="@color/ViajeGray"
+	                                android:fontFamily="sans_serif_light"/>
+	                        
+	                        <TextView android:id="@+id/total_cost_label" 
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:text="@string/total_cost_label_str"
+	                                android:layout_marginRight="4dp"
+	                                android:textColor="@color/ViajeGray"
+	                                android:fontFamily="sans_serif_light"/>
+				</LinearLayout>
+	    
+	            <LinearLayout android:id="@+id/summary_panel_right"
+	                        android:orientation="vertical"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        
+	                        android:layout_toRightOf="@id/summary_panel_left"
+	                        android:layout_marginTop="4dip"
+	                        android:layout_marginBottom="4dip">
+	                        
+	                        <TextView android:id="@+id/traff_cond_text" 
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:text="This is a title"
+	                                android:textColor="@color/ViajeGray"
+	                                android:fontFamily="sans_serif_light"/>
+	                        
+	                        <TextView android:id="@+id/total_dist_text" 
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:text="This is a title"
+	                                android:textColor="@color/ViajeGray"
+	                                android:fontFamily="sans_serif_light"/>
+	                        
+	                        <TextView android:id="@+id/total_cost_text" 
+	                                android:layout_width="wrap_content"
+	                                android:layout_height="wrap_content"
+	                                android:text="This is a title"
+	                                android:textColor="@color/ViajeGray"
+	                                android:fontFamily="sans_serif_light"/>
+	            </LinearLayout>
+            </RelativeLayout>
+
+			<ListView
+			    android:id="@+id/android:list"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentRight="true"
+			    android:layout_below="@id/summary_panel"
+			    android:background="@color/ViajeWhite"/>
+
+			<ImageButton
+			    android:id="@+id/favorite"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignRight="@+id/android:list"
+			    android:layout_alignTop="@+id/summary_panel"
+			    android:background="@null"
+			    android:layout_marginTop="4dp"
+			    android:layout_marginRight="8dp"
+			    android:src="@drawable/selector_star" />
+
+</RelativeLayout> 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blueViaje">#21A9DB</color>
+    <color name="bluePressed">#008cc0</color>
+    <color name="ViajeGray">#333333</color>
+    <color name="ViajeWhite">#ffffff</color>
+    <color name="ViajeLightGray">#eeeeee</color>
+    <color name="ViajeLightGrayPressed">#e1e1e1</color>
+    
+    <color name="ViajeRed">#eb4604</color>
+    <color name="ViajeDarkRed">#be4819</color>
+    <color name="ViajeRedDarkShadow">#477070</color>
+    <color name="ViajeRedLightShadow">#4fa3bc</color>
+    
+    <color name="ViajeLogInBlue">#22a9db</color>
+    <color name="ViajeShadow">#aa848484</color>
+    <color name="ViajeBlueDarkShadow">#1b75b5</color>
+    <color name="ViajeBlueLightShadow">#329ed1</color>
+    
+    <color name="ViajeYellow">#f6ef3c</color>
+    <color name="ViajeYellowDarkShadow">#7ba8a8</color>
+    <color name="ViajeYellowLightShadow">#dad797</color>
+    <color name="ViajeYellowPressed">#d9d44b</color>
+    
+    <color name="ViajeGrayShadow">#cccccc</color>
+    <color name="ViajeLightGrayShadow">#dfdfdf</color>
+    
+    <color name="ViajeBlack">#000000</color>
+</resources>

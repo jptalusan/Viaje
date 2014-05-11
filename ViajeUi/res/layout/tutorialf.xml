@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:weightSum="7">
+	
+   	<ImageView 
+	    android:layout_width="match_parent"
+		android:layout_height="0dp" 
+		android:layout_weight="4"
+		android:id="@+id/imageView1"
+		android:src="@drawable/stats" 
+		android:adjustViewBounds="true" 
+		android:scaleType="fitXY"/>
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2"
+	    android:layout_gravity="center">
+		<TextView 
+		    android:id="@+id/welcome"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Live Statistics"
+		    android:fontFamily="sans-serif-light"
+		    android:textSize="24sp"
+		    android:paddingTop="8dp"
+		    android:paddingBottom="8dp"
+		    android:textColor="@color/ViajeWhite"
+		    android:gravity="center"
+		    android:background="@color/blueViaje"/>
+
+		<TextView 
+		    android:id="@+id/thanks"
+		    android:paddingLeft="24dp"
+	    	android:paddingRight="24dp"
+	    	android:paddingTop="24dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/welcome"
+		    android:text="@string/string_live_stats_instruction"
+		    android:gravity="center"
+		    android:fontFamily="sans-serif-light"
+		    android:textSize="16sp"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+	    android:id="@+id/buttons"
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="horizontal"
+	    android:weightSum="2" >
+
+	    <RelativeLayout
+   	        android:layout_weight="1"
+   	        android:layout_width="0dp"
+	        android:layout_height="wrap_content">
+       	    <Button
+		        android:id="@+id/again"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/background_blue_button_selector"
+		        android:layout_alignParentBottom="true"
+            	android:layout_alignParentLeft="true"
+		        android:clickable="true"
+		        android:fontFamily="sans-serif-light"
+		        android:gravity="center|center_vertical"
+		        android:text="AGAIN"
+		        android:onClick="ButtonCalls"
+		        android:textColor="@color/ViajeWhite"
+		        android:textSize="18sp" />
+	    </RelativeLayout>
+
+
+	    <RelativeLayout
+   	        android:layout_weight="1"
+   	        android:layout_width="0dp"
+	        android:layout_height="wrap_content">
+       	    <Button
+		        android:id="@+id/done"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/background_blue_button_selector"
+  		        android:layout_alignParentBottom="true"
+            	android:layout_alignParentRight="true"
+		        android:clickable="true"
+		        android:fontFamily="sans-serif-light"
+		        android:gravity="center|center_vertical"
+		        android:text="DONE"
+		        android:onClick="ButtonCalls"
+		        android:textColor="@color/ViajeWhite"
+		        android:textSize="18sp" />
+	    </RelativeLayout>
+	
+	</LinearLayout>
+</LinearLayout>

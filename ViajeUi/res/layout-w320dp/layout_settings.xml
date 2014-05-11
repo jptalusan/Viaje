@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ViajeWhite"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/ViajeWhite"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="8dp"
+        android:text="@string/string_user_name"
+        android:textColor="@color/ViajeGray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_user"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/ViajeWhite"
+        android:fontFamily="sans-serif-light"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:text="@string/string_user_email"
+        android:textColor="@color/ViajeGray"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/text_email"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/find_route_divider" />
+
+    <Button
+        android:id="@+id/btn_enable_display_incident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider1"
+        android:background="@drawable/background_box_selector"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="24dp"
+        android:paddingTop="10dp"
+        android:text="Display Incidents on Map"
+        android:textColor="@color/ViajeGray"
+        android:textSize="19sp" />
+
+    <CheckBox
+        android:id="@+id/check_display_incident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_enable_display_incident"
+        android:layout_below="@+id/divider1"
+        android:clickable="false"
+        android:paddingRight="16dp"
+        android:paddingTop="30dp" />
+
+    <TextView
+        android:id="@+id/btn_enable_display_incident_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_enable_display_incident"
+        android:layout_below="@+id/divider1"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="24dp"
+        android:paddingTop="32dp"
+        android:text="@string/string_setting_display_incident_description"
+        android:textColor="@color/ViajeGray"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/btn_enable_display_incident_description"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/find_route_divider" />
+
+    <Button
+        android:id="@+id/btn_OTP_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider2"
+        android:background="@drawable/background_box_selector"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:text="Server Used"
+        android:textColor="@color/ViajeGray"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/btn_OTP_server_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_OTP_server"
+        android:layout_below="@+id/divider2"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="24dp"
+        android:paddingTop="30dp"
+        android:text="Current Server address is "
+        android:textColor="@color/ViajeGray"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/btn_OTP_server_description"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/find_route_divider" />
+
+    <ImageView
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/btn_logout"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/find_route_divider" />
+
+    <!-- <Button -->
+    <!-- android:id="@+id/save" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentBottom="true" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:layout_marginLeft="16dp" -->
+    <!-- android:layout_marginRight="16dp" -->
+    <!-- android:layout_marginBottom="75dp" -->
+    <!-- android:background="@drawable/background_sign_up_selector" -->
+    <!-- android:textSize="18sp" -->
+    <!-- android:fontFamily="sans-serif-light" -->
+    <!-- android:text="Save" /> -->
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/btn_logout"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/find_route_divider" />
+
+    <Button
+        android:id="@+id/clearStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/divider3"
+        android:background="@drawable/background_box_selector"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:text="Clear User statistics"
+        android:textColor="@color/ViajeGray"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/clearStats"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/background_box_selector"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:text="Log Out"
+        android:textColor="@color/ViajeGray"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/historicalData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageView01"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/background_box_selector"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="24dp"
+        android:paddingTop="10dp"
+        android:text="Use Historical Data"
+        android:textColor="@color/ViajeGray"
+        android:textSize="19sp" />
+
+    <CheckBox
+        android:id="@+id/HistoricalDataCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ImageView02"
+        android:clickable="false"
+        android:paddingRight="16dp"
+        android:paddingTop="30dp" />
+
+    <ImageView
+        android:id="@+id/ImageView02"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@+id/clearStats"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/find_route_divider" />
+
+    <ImageView
+        android:id="@+id/ImageView03"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/ImageView01"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:src="@drawable/find_route_divider" />
+
+</RelativeLayout>

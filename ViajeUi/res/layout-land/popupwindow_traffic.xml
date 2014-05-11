@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_report_traffic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/background_collision_popup"
+    tools:context=".ShowReportIncidentPopUp" >
+    
+    <TextView
+	       android:id="@+id/ReportTitle"
+	       android:layout_width="280dp"
+	       android:layout_height="wrap_content"
+	       android:layout_marginBottom="8dp"
+	       android:gravity="center"
+	       android:text="@string/string_report_traffic"
+	       android:layout_centerHorizontal="true"
+	       android:textColor="@color/ViajeWhite"
+	       android:background="@color/ViajeGray"
+	       android:textSize="22sp" />
+    
+    <RelativeLayout 
+	    android:id="@+id/popup_main"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/ReportTitle"
+	    android:background="@null">
+
+
+	    
+	    <Button
+	        android:id="@+id/button_moderate"
+	        android:text="@string/string_moderate" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="8dp"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginRight="2dp"
+	        android:layout_marginBottom="2dp"
+	        android:paddingBottom="2dp"
+	        android:textSize="12sp"
+	        android:layout_alignParentLeft="true"	        
+	        android:clickable="true"
+	        android:contentDescription="@string/desc_find_route"
+	        android:background="@drawable/background_report_button_selector"
+	        android:drawableTop="@drawable/ic_report_incident_traffic_moderate" />
+	    
+	    <Button
+	        android:id="@+id/button_heavy"
+	        android:text="@string/string_heavy" 
+	        android:textSize="12sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="2dp"
+	        android:paddingBottom="2dp"
+	        android:layout_toRightOf="@+id/button_moderate"
+	        android:background="@drawable/background_report_button_selector"
+	        android:clickable="true"
+	        android:contentDescription="@string/desc_find_route"
+	        android:drawableTop="@drawable/ic_report_incident_traffic_heavy" />
+	    
+   	    <Button
+	        android:id="@+id/button_standstill"
+	        android:text="@string/string_standstill" 
+	        android:textSize="12sp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="2dp"
+	        android:paddingBottom="2dp"
+	        android:layout_toRightOf="@+id/button_heavy"
+	        android:background="@drawable/background_report_button_selector"
+	        android:clickable="true"
+	        android:contentDescription="@string/desc_find_route"
+	        android:drawableTop="@drawable/ic_report_incident_traffic_standstill" />
+	    
+	    <ImageView
+	        android:id="@+id/locator"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginTop="2dp"
+	        android:background="@null"
+	        android:contentDescription="@string/desc_find_route"
+	        android:layout_below="@+id/button_moderate"
+	        android:src="@drawable/ic_edittext_locator" />
+	    
+	    <TextView
+	        android:id="@+id/location"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp"
+	        android:text="@string/string_current_location"
+	        android:layout_below="@+id/button_moderate"
+	        android:layout_toRightOf="@+id/locator"
+	        android:fontFamily="sans-serif-light"/>
+	    
+	    <ImageView
+	        android:id="@+id/watch"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:background="@null"
+	        android:contentDescription="@string/desc_find_route"
+	        android:layout_below="@+id/locator"
+	        android:src="@drawable/ic_criteria_less_time_gray" />
+	    
+	    <TextView
+	        android:id="@+id/time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/string_current_time"
+	        android:layout_below="@+id/location"
+	        android:layout_toRightOf="@+id/watch"
+	        android:fontFamily="sans-serif-light"/>
+    </RelativeLayout>
+    
+    <include layout= "@layout/popupwindow_report_buttons"
+        android:id="@+id/buttons"
+        android:gravity="center"
+   	    android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popup_main"/>
+
+</RelativeLayout>

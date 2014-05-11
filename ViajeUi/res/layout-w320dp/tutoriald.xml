@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:weightSum="7">
+	
+   	<ImageView 
+	    android:layout_width="match_parent"
+		android:layout_height="0dp" 
+		android:layout_weight="4"
+		android:id="@+id/imageView1"
+		android:src="@drawable/savedroutes" 
+		android:adjustViewBounds="true" 
+		android:scaleType="fitXY"/>
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="3"
+	    android:layout_gravity="center">
+		<TextView 
+		    android:id="@+id/title"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/string_saving_route"
+		    android:fontFamily="sans-serif-light"
+		    android:textSize="24sp"
+		    android:paddingTop="8dp"
+		    android:paddingBottom="8dp"
+		    android:textColor="@color/ViajeWhite"
+		    android:gravity="center"
+		    android:background="@color/blueViaje"/>
+
+		<TextView 
+		    android:id="@+id/body"
+       	    android:paddingLeft="16dp"
+	    	android:paddingRight="16dp"
+	    	android:paddingTop="24dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/title"
+		    android:text="@string/string_saving_routetext"
+		    android:gravity="center"
+		    android:fontFamily="sans-serif-light"
+		    android:textSize="16sp"/>
+		
+
+	</RelativeLayout>
+</LinearLayout>

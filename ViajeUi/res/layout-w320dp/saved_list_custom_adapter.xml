@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:paddingLeft="10sp" android:paddingRight="10sp"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" android:paddingTop="2sp">
+	<LinearLayout 
+	    android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<TextView 
+		    android:id="@+id/fromLbl" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textStyle="bold"
+			android:text="From  " 
+			android:textSize="13sp">
+		</TextView>
+		<TextView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Number"
+			android:id="@+id/fromText" 
+			android:textSize="13sp">
+		</TextView>
+	</LinearLayout>	
+	<LinearLayout 
+	    android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<TextView 
+		    android:id="@+id/toLbl" 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textStyle="bold"
+			android:text="To  " 
+			android:textSize="13sp">
+		</TextView>
+		<TextView 
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="Number"
+			android:id="@+id/toText" 
+			android:textSize="13sp">
+		</TextView>
+	</LinearLayout>	
+	<LinearLayout 
+	    android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent">
+		<ImageView 
+		    android:layout_width="wrap_content" 
+		    android:id="@+id/btnRemove" 
+		    android:src="@drawable/ic_criteria_less_cost_blue" 
+		    android:layout_height="40dip">
+		</ImageView>
+		<TextView
+		    android:id="@+id/costText"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_weight="1"
+		    android:text="Mail  "
+		    android:textSize="13sp" >
+		</TextView>
+		<ImageView 
+		    android:layout_width="wrap_content" 
+		    android:id="@+id/btnRemove" 
+		    android:src="@drawable/ic_criteria_less_distance_blue" 
+		    android:layout_height="40dip">
+		</ImageView>
+		<TextView
+		    android:id="@+id/distanceText"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_weight="1"
+		    android:text="Mail"
+		    android:textSize="13sp" >
+		</TextView>
+		<ImageView 
+		    android:layout_width="wrap_content" 
+		    android:id="@+id/btnRemove" 
+		    android:src="@drawable/ic_criteria_less_traffic_blue" 
+		    android:layout_height="40dip">
+		</ImageView>
+		<TextView
+		    android:id="@+id/trafficText"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:layout_weight="1"
+		    android:text="Mail"
+		    android:textSize="13sp" >
+		</TextView>
+	</LinearLayout>	
+</LinearLayout>

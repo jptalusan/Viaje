@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_report_incident"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/background_report_incident_popup"
+    tools:context=".ShowReportIncidentPopUp" >
+
+    <TextView
+        android:id="@+id/ReportTitle"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:gravity="center"
+        android:text="@string/string_report"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/ViajeWhite"
+        android:background="@color/ViajeGray"
+        android:textSize="22sp" />
+    
+        <ImageButton
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ReportTitle"
+        android:paddingRight="8dp"
+        android:paddingTop="6dp"
+        android:background="@null"
+        android:clickable="true"
+        android:contentDescription="@string/desc_find_route"
+        android:src="@drawable/ic_close" />
+       
+    <RelativeLayout 
+	    android:id="@+id/popup_main"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="6dp"
+	    android:layout_marginRight="6dp"
+	    android:paddingBottom="8dp"
+        android:paddingTop="6dp"
+	    android:layout_below="@+id/ReportTitle">
+    
+    <Button
+        android:id="@+id/button_collision"
+        android:text="@string/string_report_collision" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingBottom="2dp"
+        android:textSize="12sp"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:contentDescription="@string/desc_find_route"
+        android:background="@drawable/background_report_button"
+        android:drawableTop="@drawable/ic_report_incident_collision" />
+    
+    <Button
+        android:id="@+id/button_crime"
+        android:text="@string/string_report_crime" 
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingBottom="2dp"
+        android:layout_toRightOf="@+id/button_collision"
+        android:background="@drawable/background_report_button"
+        android:clickable="true"
+        android:contentDescription="@string/desc_find_route"
+        android:drawableTop="@drawable/ic_report_incident_crime" />
+    
+    <Button
+        android:id="@+id/button_flood"
+        android:text="@string/string_report_flood" 
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingBottom="2dp"
+        android:layout_toRightOf="@+id/button_crime"     
+        android:background="@drawable/background_report_button"
+        android:clickable="true"
+        android:contentDescription="@string/desc_find_route"
+        android:drawableTop="@drawable/ic_report_incident_flood" />
+    
+    <Button
+        android:id="@+id/button_construction"
+        android:text="@string/string_report_construction" 
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/button_collision"
+        android:background="@drawable/background_report_button"
+        android:clickable="true"
+        android:contentDescription="@string/desc_find_route"
+        android:drawableTop="@drawable/ic_report_incident_construction" />
+    
+    <Button
+        android:id="@+id/button_roadblock"
+        android:text="@string/string_report_roadblock" 
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingBottom="2dp"
+        android:layout_toRightOf="@+id/button_construction"
+        android:layout_below="@+id/button_crime"
+        android:background="@drawable/background_report_button"
+        android:clickable="true"
+        android:contentDescription="@string/desc_find_route"
+        android:drawableTop="@drawable/ic_report_incident_roadblock" />
+    
+    <Button
+        android:id="@+id/button_traffic"
+        android:text="@string/string_report_traffic" 
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:paddingBottom="2dp"
+        android:layout_toRightOf="@+id/button_roadblock"
+        android:layout_below="@+id/button_flood"
+        android:background="@drawable/background_report_button"
+        android:clickable="true"
+        android:contentDescription="@string/desc_find_route"
+        android:drawableTop="@drawable/ic_report_incident_traffic" />
+    </RelativeLayout>
+
+</RelativeLayout>

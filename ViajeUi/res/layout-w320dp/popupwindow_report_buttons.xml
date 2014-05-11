@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="218dp"
+	 android:layout_height="wrap_content"
+	 android:layout_gravity="center"
+	 android:layout_marginTop="4dp"
+	 android:background="@null"
+	 android:weightSum="2">
+
+	 <Button
+	     android:id="@+id/button_send"
+	     android:text="@string/string_send_report" 
+	     android:textSize="18sp"
+	     android:layout_width="0dp"
+	     android:layout_height="wrap_content"	     
+	     android:clickable="true"
+	     android:background="@drawable/background_send_report_selector"
+	     android:layout_gravity="center"
+	     android:contentDescription="@string/string_send_report_button"
+	     android:layout_weight="1"
+	     android:fontFamily="sans-serif-light"/>
+	 
+	   <Button
+	     android:id="@+id/button_cancel"
+	     android:text="@string/string_cancel_report" 
+	     android:textSize="18sp"
+	     android:layout_width="0dp"
+	     android:layout_height="wrap_content"     	        
+	     android:clickable="true"
+	     android:background="@drawable/background_cancel_selector"
+	     android:layout_gravity="center"
+	     android:contentDescription="@string/string_cancel_report_button"
+	     android:layout_weight="1"
+	     android:fontFamily="sans-serif-light"/>
+ 
+</LinearLayout>
+
+

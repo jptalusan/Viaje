@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_report_crime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/background_collision_popup"
+    tools:context=".ShowReportIncidentPopUp" >
+
+    <TextView
+        android:id="@+id/ReportTitle"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/string_report_crime_to_police"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/ViajeWhite"
+        android:background="@color/ViajeGray"
+        android:textSize="22sp" />
+	    
+    <RelativeLayout 
+	    android:id="@+id/police_information"
+	    android:layout_below="@+id/ReportTitle"
+	    android:layout_width="268dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="6dp"
+	    android:paddingBottom="4dp"
+	    android:paddingLeft="6dp"
+	    android:paddingRight="6dp"
+	    android:background="@drawable/background_report_button">
+        
+   	    <ImageView
+	        android:id="@+id/police_icon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"	
+	        android:layout_marginLeft="4dp"	
+	        android:layout_marginRight="8dp"		        
+	        android:layout_marginTop="2dp"
+	        android:background="@null"
+	        android:contentDescription="@string/desc_find_route"
+	        android:src="@drawable/ic_report_incident_crime_police" />
+   	    
+  	    <TextView
+	        android:id="@+id/nearest_station"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="2dp"	
+	        android:text="@string/string_nearest_police_station"
+	        android:layout_marginTop="2dp"
+	        android:layout_toRightOf="@+id/police_icon"
+	        android:textSize="12sp"
+	        android:fontFamily="sans-serif-light"/>
+  	    
+  	    <TextView
+	        android:id="@+id/address"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="2dp"	
+	        android:text="@string/string_police_address"
+	        android:layout_toRightOf="@+id/police_icon"
+	        android:layout_below="@+id/nearest_station"
+	        android:textSize="18sp"
+	        android:fontFamily="sans-serif-light"/>
+		  	    
+  	    <TextView
+	        android:id="@+id/phone_number"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="2dp"	
+	        android:text="@string/string_police_number"
+	        android:layout_toRightOf="@+id/police_icon"
+	        android:layout_below="@+id/address"
+	        android:textSize="16sp"
+	        android:fontFamily="sans-serif-light"/>
+	    
+   	    </RelativeLayout>
+        <RelativeLayout 
+		    android:id="@+id/popup_main"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="6dp"
+		    android:paddingRight="6dp"
+		    android:layout_below="@+id/police_information"
+		    android:background="@null">
+  	    <ImageView
+	        android:id="@+id/locator"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_marginTop="2dp"
+	        android:background="@null"
+	        android:contentDescription="@string/desc_find_route"	        
+	        android:src="@drawable/ic_edittext_locator" />
+	    
+	    <TextView
+	        android:id="@+id/location"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="2dp"
+	        android:text="@string/string_current_location"
+	        android:layout_toRightOf="@+id/locator"
+	        android:fontFamily="sans-serif-light"/>
+	    
+	    <ImageView
+	        android:id="@+id/watch"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:background="@null"
+	        android:contentDescription="@string/desc_find_route"
+	        android:layout_below="@+id/locator"
+	        android:src="@drawable/ic_criteria_less_time_gray" />
+	    
+	    <TextView
+	        android:id="@+id/time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/string_current_time"
+	        android:layout_below="@+id/location"
+	        android:layout_toRightOf="@+id/watch"
+	        android:fontFamily="sans-serif-light"/>
+	    
+    </RelativeLayout>
+    
+    <include layout= "@layout/popupwindow_report_buttons"
+        android:id="@+id/buttons"
+        android:gravity="center"
+   	    android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popup_main"/>
+</RelativeLayout>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">  
+    
+      <ImageView
+      android:id="@+id/route_traffic_icon_background"
+      android:layout_alignBottom="@+id/route_traffic_icon"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="4dp"
+      android:layout_marginRight="4dp"
+      android:layout_marginTop="18dp"
+      android:contentDescription="@string/traffic_icon_content_desc" />
+      
+      <ImageView
+      android:id="@+id/route_traffic_icon"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="4dp"
+      android:layout_marginRight="4dp"
+      android:layout_marginTop="18dp"
+      android:contentDescription="@string/traffic_icon_content_desc" />
+      
+     <LinearLayout android:id="@+id/route_panel_mid"
+                     android:orientation="vertical"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true"
+                     android:layout_toRightOf="@id/route_traffic_icon"
+                     android:layout_marginTop="4dip"
+                     android:layout_marginBottom="4dip">
+               
+	      <LinearLayout
+	             android:orientation="horizontal"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content">
+			<TextView
+		        android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Route "
+				android:textStyle="bold"
+				android:textSize="13sp"/>
+		    
+			<TextView
+	         android:id="@+id/route_name_text"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="TextView" />
+		</LinearLayout>
+		
+		<LinearLayout
+	             android:orientation="horizontal"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content">
+
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:text="From  "
+			    android:textSize="13sp"
+			    android:textStyle="bold" />
+		    
+			<TextView
+	         android:id="@+id/route_fromLocation_text"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="TextView" />
+		</LinearLayout>
+		
+		<LinearLayout
+	             android:orientation="horizontal"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content">
+
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:text="To       "
+			    android:textSize="13sp"
+			    android:textStyle="bold" />
+		    
+			<TextView
+	         android:id="@+id/route_toLocation_text"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="TextView" />
+		</LinearLayout>
+		
+		
+		<LinearLayout
+	             android:orientation="horizontal"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content">
+
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:text="Dist     "
+			    android:textSize="13sp"
+			    android:textStyle="bold" />
+		    
+			<TextView
+	         android:id="@+id/route_totalDist_text"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="TextView" />
+		</LinearLayout>
+		
+		
+		<LinearLayout
+	             android:orientation="horizontal"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content">
+
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:text="Cost    "
+			    android:textSize="13sp"
+			    android:textStyle="bold" />
+		    
+			<TextView
+	         android:id="@+id/route_totalCost_text"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="TextView" />
+		</LinearLayout>
+		
+		
+		<LinearLayout
+	             android:orientation="horizontal"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content">
+			<TextView
+		        android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Traffic "
+				android:textStyle="bold"
+				android:textSize="13sp"/>
+		    
+			<TextView
+	         android:id="@+id/route_trafficCondition_text"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="TextView" />
+		</LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

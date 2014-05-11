@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/up_Button"
+        android:contentDescription="@string/openNavDrawerDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:src="@drawable/ic_navigation_previous_item"
+        android:background="@color/blueViaje"
+        android:onClick="buttonCalls"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/string_saved_route"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall" />
+    
+        <ImageButton
+        android:id="@+id/buttonReportIncident"
+        android:contentDescription="@string/openNavDrawerDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="8dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_navmenu_report_incident"
+        android:background="@drawable/navdrawer_button"
+        android:clickable="true"
+        android:text="" />
+    
+</RelativeLayout>
